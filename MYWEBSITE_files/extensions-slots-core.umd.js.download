@@ -1,0 +1,352 @@
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("react"), require("react-dom"));
+	else if(typeof define === 'function' && define.amd)
+		define("extensions-slots-core", ["react", "reactDOM"], factory);
+	else if(typeof exports === 'object')
+		exports["extensions-slots-core"] = factory(require("react"), require("react-dom"));
+	else
+		root["extensions-slots-core"] = factory(root["React"], root["ReactDOM"]);
+})((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__329__, __WEBPACK_EXTERNAL_MODULE__561__) {
+return /******/ (function() { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ 708:
+/*!*****************************************************************************************************!*\
+  !*** ../../../node_modules/@wix/yoshi-webpack-utils/node_modules/@babel/runtime/helpers/extends.js ***!
+  \*****************************************************************************************************/
+/***/ (function(module) {
+
+function _extends() {
+  module.exports = _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  module.exports["default"] = module.exports, module.exports.__esModule = true;
+  return _extends.apply(this, arguments);
+}
+
+module.exports = _extends;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ 566:
+/*!**************************************************************************************************************************!*\
+  !*** ../../../node_modules/@wix/yoshi-webpack-utils/node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js ***!
+  \**************************************************************************************************************************/
+/***/ (function(module) {
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+module.exports = _objectWithoutPropertiesLoose;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ 570:
+/*!*******************************!*\
+  !*** ./types/openedPanels.ts ***!
+  \*******************************/
+/***/ (function() {
+
+
+
+/***/ }),
+
+/***/ 843:
+/*!***************************!*\
+  !*** ./types/panelAPI.ts ***!
+  \***************************/
+/***/ (function() {
+
+
+
+/***/ }),
+
+/***/ 101:
+/*!*****************************!*\
+  !*** ./types/slotsState.ts ***!
+  \*****************************/
+/***/ (function() {
+
+
+
+/***/ }),
+
+/***/ 329:
+/*!**************************************************************************************!*\
+  !*** external {"amd":"react","commonjs":"react","commonjs2":"react","root":"React"} ***!
+  \**************************************************************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = __WEBPACK_EXTERNAL_MODULE__329__;
+
+/***/ }),
+
+/***/ 561:
+/*!****************************************************************************************************!*\
+  !*** external {"amd":"reactDOM","commonjs":"react-dom","commonjs2":"react-dom","root":"ReactDOM"} ***!
+  \****************************************************************************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = __WEBPACK_EXTERNAL_MODULE__561__;
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	!function() {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = function(module) {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+!function() {
+"use strict";
+/*!*******************************!*\
+  !*** ./index.ts + 45 modules ***!
+  \*******************************/
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "EditorOpenedPanelsProvider": function() { return /* reexport */ EditorOpenedPanelsProvider; },
+  "ExtensionDataProvider": function() { return /* reexport */ ExtensionDataProvider; },
+  "HelpMenuItemsSlot": function() { return /* reexport */ HelpMenuItemsSlot; },
+  "OpenedPanel": function() { return /* reexport */ openedPanels.OpenedPanel; },
+  "PanelAPI": function() { return /* reexport */ panelAPI.PanelAPI; },
+  "PanelType": function() { return /* reexport */ panelAPI.PanelType; },
+  "PrimaryButtonsSlot": function() { return /* reexport */ PrimaryButtonsSlot; },
+  "PrimaryPanelsSlot": function() { return /* reexport */ PrimaryPanelsSlot; },
+  "SlotsState": function() { return /* reexport */ slotsState.SlotsState; },
+  "SlotsStateProvider": function() { return /* reexport */ SlotsStateProvider; },
+  "StageLayerSlot": function() { return /* reexport */ StageLayerSlot; },
+  "StickyPanelSlot": function() { return /* reexport */ StickyPanelSlot; },
+  "ToolsMenuItemSlot": function() { return /* reexport */ ToolsMenuItemSlot; },
+  "TopBarSecondaryActionsSlot": function() { return /* reexport */ TopBarSecondaryActionsSlot; },
+  "extensionsSlotsInitialState": function() { return /* reexport */ extensionsSlotsInitialState; },
+  "extensionsSlotsReducer": function() { return /* reexport */ extensionsSlotsReducer; },
+  "getSlots": function() { return /* reexport */ getSlots; },
+  "registerSlotPortal": function() { return /* reexport */ registerSlotPortal; },
+  "registerSlotPortalNode": function() { return /* reexport */ registerSlotPortalNode; },
+  "unregisterSlotPortal": function() { return /* reexport */ unregisterSlotPortal; },
+  "unregisterSlotPortalNode": function() { return /* reexport */ unregisterSlotPortalNode; },
+  "updateSlotPortalProps": function() { return /* reexport */ updateSlotPortalProps; },
+  "useBiLogger": function() { return /* reexport */ useBiLogger; },
+  "useBoundedPanelAPI": function() { return /* reexport */ useBoundedPanelAPI; },
+  "useDocumentServices": function() { return /* reexport */ useDocumentServices; },
+  "useEditorExperiments": function() { return /* reexport */ useEditorExperiments; },
+  "useEditorSDK": function() { return /* reexport */ useEditorSDK; },
+  "useExperiments": function() { return /* reexport */ useExperiments; },
+  "useExtensionId": function() { return /* reexport */ useExtensionId; },
+  "useServiceTopology": function() { return /* reexport */ useServiceTopology; },
+  "useTranslation": function() { return /* reexport */ useTranslation; }
+});
+
+// EXTERNAL MODULE: ../../../node_modules/@wix/yoshi-webpack-utils/node_modules/@babel/runtime/helpers/extends.js
+var helpers_extends = __webpack_require__(708);
+var extends_default = /*#__PURE__*/__webpack_require__.n(helpers_extends);
+// EXTERNAL MODULE: external {"amd":"react","commonjs":"react","commonjs2":"react","root":"React"}
+var external_amd_react_commonjs_react_commonjs2_react_root_React_ = __webpack_require__(329);
+var external_amd_react_commonjs_react_commonjs2_react_root_React_default = /*#__PURE__*/__webpack_require__.n(external_amd_react_commonjs_react_commonjs2_react_root_React_);
+;// CONCATENATED MODULE: ./components/slots-state/SlotsAPIContext.tsx
+var SlotsAPIContext=/*#__PURE__*/(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.createContext)({});SlotsAPIContext.displayName='SlotsAPIContext';
+;// CONCATENATED MODULE: ./hooks/slots/useSlotsAPI.ts
+var useSlotsAPI=function useSlotsAPI(){return (0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useContext)(SlotsAPIContext);};
+;// CONCATENATED MODULE: ./components/slots-state/SlotsContentContext.tsx
+var SlotsContentContext=/*#__PURE__*/(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.createContext)({});SlotsContentContext.displayName='SlotsContentContext';
+;// CONCATENATED MODULE: ./hooks/slots/useSlot.ts
+var useSlot=function useSlot(slotId){var slots=(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useContext)(SlotsContentContext);return slots[slotId];};
+;// CONCATENATED MODULE: ./hooks/slots/useSlotPortals.ts
+function useSlotPortals(slotId,filter,sort){var slot=useSlot(slotId);return (0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useMemo)(function(){if(!slot||Object.keys(slot).length===0){return[];}var extensionsIds=Object.keys(slot);var filteredExtensionIds=filter(extensionsIds);var sortedExtensionsIds=sort(filteredExtensionIds);return sortedExtensionsIds.flatMap(function(extensionId){return slot[extensionId];});},[slot,filter,sort]);}
+;// CONCATENATED MODULE: ./utils/typedMemo.ts
+// React.memo hides generic props of a wrapped component
+// more details here https://github.com/DefinitelyTyped/DefinitelyTyped/issues/37087
+var typedMemo=external_amd_react_commonjs_react_commonjs2_react_root_React_.memo;
+;// CONCATENATED MODULE: ./utils/uniqueId.ts
+var getRandomBytes=function getRandomBytes(){return Math.random()*46656|0;};var generateUID=function generateUID(){return getRandomBytes().toString(36)+getRandomBytes().toString(36);};
+;// CONCATENATED MODULE: ./hooks/utils/useUniqueId.ts
+var useUniqueId=function useUniqueId(){var _useState=(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useState)(generateUID),id=_useState[0];return id;};
+;// CONCATENATED MODULE: ./components/SlotPlacement.tsx
+var SlotPortalPlacement=typedMemo(function(props){var _props$slotPortal=props.slotPortal,portalId=_props$slotPortal.portalId,_props$slotPortal$own=_props$slotPortal.ownProps,ownProps=_props$slotPortal$own===void 0?{}:_props$slotPortal$own;var _useSlotsAPI=useSlotsAPI(),registerSlotPortalNode=_useSlotsAPI.registerSlotPortalNode,unregisterSlotPortalNode=_useSlotsAPI.unregisterSlotPortalNode;var slotPlacementId=useUniqueId();var portalNodeId=props.slotId+"."+props.slotPortal.extensionId+"."+portalId+"."+slotPlacementId;var integrationProps=(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useMemo)(function(){return{'data-extensions-portal-node-id':portalNodeId};},[portalNodeId]);(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useLayoutEffect)(function(){registerSlotPortalNode(portalId,slotPlacementId,portalNodeId);return function(){unregisterSlotPortalNode(portalId,slotPlacementId);};},[registerSlotPortalNode,unregisterSlotPortalNode,portalId,portalNodeId,slotPlacementId]);return props.render(integrationProps,ownProps);});var SlotPortalPlacementList=typedMemo(function(props){return/*#__PURE__*/external_amd_react_commonjs_react_commonjs2_react_root_React_default().createElement((external_amd_react_commonjs_react_commonjs2_react_root_React_default()).Fragment,null,props.slotPortals.map(function(slotPortal){return/*#__PURE__*/external_amd_react_commonjs_react_commonjs2_react_root_React_default().createElement(SlotPortalPlacement,{slotId:props.slotId,slotPortal:slotPortal,key:slotPortal.portalId,render:props.render});}));});var SlotPlacement=function SlotPlacement(props){var slotId=props.slotId,render=props.render,filter=props.filter,sort=props.sort;var slotPortals=useSlotPortals(slotId,filter,sort);return (0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useMemo)(function(){if(slotPortals.length===0){return null;}return/*#__PURE__*/external_amd_react_commonjs_react_commonjs2_react_root_React_default().createElement(SlotPortalPlacementList,{slotId:slotId,slotPortals:slotPortals,render:render});},[slotPortals,slotId,render]);};
+// EXTERNAL MODULE: ../../../node_modules/@wix/yoshi-webpack-utils/node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js
+var objectWithoutPropertiesLoose = __webpack_require__(566);
+var objectWithoutPropertiesLoose_default = /*#__PURE__*/__webpack_require__.n(objectWithoutPropertiesLoose);
+// EXTERNAL MODULE: external {"amd":"reactDOM","commonjs":"react-dom","commonjs2":"react-dom","root":"ReactDOM"}
+var external_amd_reactDOM_commonjs_react_dom_commonjs2_react_dom_root_ReactDOM_ = __webpack_require__(561);
+var external_amd_reactDOM_commonjs_react_dom_commonjs2_react_dom_root_ReactDOM_default = /*#__PURE__*/__webpack_require__.n(external_amd_reactDOM_commonjs_react_dom_commonjs2_react_dom_root_ReactDOM_);
+;// CONCATENATED MODULE: ./components/slots-state/SlotsPortalNodesContext.tsx
+var SlotsPortalNodesContext=/*#__PURE__*/(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.createContext)({});SlotsPortalNodesContext.displayName='SlotsPortalNodesContext';
+;// CONCATENATED MODULE: ./hooks/slots/usePortalNodes.ts
+var usePortalNodes=function usePortalNodes(slotPortalId){var portalNodes=(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useContext)(SlotsPortalNodesContext);var slotPortalNodes=portalNodes[slotPortalId]||[];var portalDomNodeSelectors=slotPortalNodes.map(function(portalNode){return"[data-extensions-portal-node-id=\""+portalNode.portalNodeId+"\"]";});return portalDomNodeSelectors.map(function(selector){return{node:document.querySelector(selector),nodeId:selector};}).filter(function(portalNode){return portalNode.node!==null;});};
+;// CONCATENATED MODULE: ./components/extension/ExtensionDataContext.ts
+var ExtensionDataContext=/*#__PURE__*/(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.createContext)({extensionId:''});
+;// CONCATENATED MODULE: ./hooks/environment/useExtensionId.ts
+var useExtensionId=function useExtensionId(){return (0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useContext)(ExtensionDataContext).extensionId;};
+;// CONCATENATED MODULE: ./hooks/utils/usePreviousValue.ts
+var usePreviousValue=function usePreviousValue(value){var prevValueRef=(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useRef)();(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useEffect)(function(){prevValueRef.current=value;});return prevValueRef.current;};
+;// CONCATENATED MODULE: ./utils/isShallowEqual.ts
+function isShallowEqual(newObject,prevObject){if(prevObject===newObject){return true;}if(prevObject===undefined||newObject===undefined){return false;}for(var prop in newObject){if(!newObject.hasOwnProperty(prop)){continue;}if(newObject[prop]!==prevObject[prop]){return false;}}if(Object.keys(prevObject).length!==Object.keys(newObject).length){return false;}return true;}
+;// CONCATENATED MODULE: ./hooks/slots/useSlotPortalPropsUpdate.ts
+var useSlotPortalPropsUpdate=function useSlotPortalPropsUpdate(slotId,extensionId,portalId,portalProps){var _useSlotsAPI=useSlotsAPI(),updateSlotPortalProps=_useSlotsAPI.updateSlotPortalProps;var prevProps=usePreviousValue(portalProps);(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useEffect)(function(){var propsChanged=!isShallowEqual(portalProps,prevProps);if(!propsChanged){return;}updateSlotPortalProps(slotId,extensionId,portalId,portalProps);});};
+;// CONCATENATED MODULE: ./components/SlotPortal.tsx
+var _excluded=["slotId","children"];var SlotPortal=function SlotPortal(props){var _useSlotsAPI=useSlotsAPI(),registerSlotPortal=_useSlotsAPI.registerSlotPortal,unregisterSlotPortal=_useSlotsAPI.unregisterSlotPortal;var extensionId=useExtensionId();var slotPortalId=useUniqueId();var slotId=props.slotId,children=props.children,slotOwnProps=objectWithoutPropertiesLoose_default()(props,_excluded);(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useEffect)(function(){registerSlotPortal(slotId,extensionId,slotPortalId);return function(){unregisterSlotPortal(slotId,extensionId,slotPortalId);};},[slotId,extensionId,slotPortalId,registerSlotPortal,unregisterSlotPortal]);useSlotPortalPropsUpdate(slotId,extensionId,slotPortalId,slotOwnProps);var portalNodes=usePortalNodes(slotPortalId);if(portalNodes.length===0||!children){return null;}return/*#__PURE__*/external_amd_react_commonjs_react_commonjs2_react_root_React_default().createElement((external_amd_react_commonjs_react_commonjs2_react_root_React_default()).Fragment,null,portalNodes.map(function(portalNode){return/*#__PURE__*/external_amd_reactDOM_commonjs_react_dom_commonjs2_react_dom_root_ReactDOM_default().createPortal(children,portalNode.node,portalNode.nodeId);}));};
+;// CONCATENATED MODULE: ./utils/slotsUtils.ts
+var identity=function identity(data){return data;};function createSlotPlacement(slotId){var Placement=function Placement(props){return SlotPlacement({slotId:slotId,filter:props.filter||identity,sort:props.sort||identity,render:props.children});};Placement.displayName=slotId+".Placement";return/*#__PURE__*/(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.memo)(Placement);}function createSlotPortal(slotId){var Portal=function Portal(props){return SlotPortal(extends_default()({},props,{slotId:slotId}));};Portal.displayName=slotId+".Portal";return/*#__PURE__*/(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.memo)(Portal);}function declareSlot(slotId){return{Placement:createSlotPlacement(slotId),Portal:createSlotPortal(slotId)};}
+;// CONCATENATED MODULE: ./slot-declarations/basicSlotIDs.ts
+var SlotID;(function(SlotID){SlotID["PrimaryButtons"]="PrimaryButtonsSlot";SlotID["PrimaryPanels"]="PrimaryPanelsSlot";SlotID["TopBarSecondaryActions"]="TopBarSecondaryActions";SlotID["HelpMenuItems"]="HelpMenuItemsSlot";SlotID["StickyPanel"]="StickyPanel";SlotID["StageLayer"]="StageLayer";SlotID["ToolsMenuItem"]="ToolsMenuItem";})(SlotID||(SlotID={}));
+;// CONCATENATED MODULE: ./slot-declarations/basic-slots/PrimaryPanelsSlot.ts
+var PrimaryPanelsSlot=declareSlot(SlotID.PrimaryPanels);
+;// CONCATENATED MODULE: ./slot-declarations/basic-slots/PrimaryButtonsSlot.ts
+var PrimaryButtonsSlot=declareSlot(SlotID.PrimaryButtons);
+;// CONCATENATED MODULE: ./slot-declarations/basic-slots/TopBarSecondaryActionsSlot.ts
+var TopBarSecondaryActionsSlot=declareSlot(SlotID.TopBarSecondaryActions);
+;// CONCATENATED MODULE: ./slot-declarations/basic-slots/HelpMenuItemsSlot.ts
+var HelpMenuItemsSlot=declareSlot(SlotID.HelpMenuItems);
+;// CONCATENATED MODULE: ./slot-declarations/basic-slots/StickyPanelSlot.ts
+var StickyPanelSlot=declareSlot(SlotID.StickyPanel);
+;// CONCATENATED MODULE: ./slot-declarations/basic-slots/StageLayerSlot.ts
+var StageLayerSlot=declareSlot(SlotID.StageLayer);
+;// CONCATENATED MODULE: ./slot-declarations/basic-slots/ToolsMenuItemSlot.ts
+var ToolsMenuItemSlot=declareSlot(SlotID.ToolsMenuItem);
+;// CONCATENATED MODULE: ./slot-declarations/index.ts
+
+;// CONCATENATED MODULE: ./components/slots-state/SlotsStateProvider.tsx
+var SlotsStateProvider=function SlotsStateProvider(props){return/*#__PURE__*/external_amd_react_commonjs_react_commonjs2_react_root_React_default().createElement(SlotsContentContext.Provider,{value:props.slots.portals},/*#__PURE__*/external_amd_react_commonjs_react_commonjs2_react_root_React_default().createElement(SlotsPortalNodesContext.Provider,{value:props.slots.portalNodes},/*#__PURE__*/external_amd_react_commonjs_react_commonjs2_react_root_React_default().createElement(SlotsAPIContext.Provider,{value:props.slotsAPI},props.children)));};
+;// CONCATENATED MODULE: ./components/editor-integration/opened-panels/EditorOpenedPanelsContext.tsx
+var EditorOpenedPanelsContext=/*#__PURE__*/(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.createContext)([]);
+;// CONCATENATED MODULE: ./components/editor-integration/opened-panels/EditorOpenedPanelsProvider.tsx
+var EditorOpenedPanelsProvider=function EditorOpenedPanelsProvider(props){return/*#__PURE__*/external_amd_react_commonjs_react_commonjs2_react_root_React_default().createElement(EditorOpenedPanelsContext.Provider,{value:props.openedPanels},props.children);};
+;// CONCATENATED MODULE: ./components/extension/ExtensionDataProvider.tsx
+var ExtensionDataProvider_excluded=["children"],_excluded2=["children"];var shallowCompareAllButChildren=function shallowCompareAllButChildren(prevProps,nextProps){var prevChildren=prevProps.children,prevPropsWithNoChildren=objectWithoutPropertiesLoose_default()(prevProps,ExtensionDataProvider_excluded);var nextChildren=nextProps.children,nextPropsWithNoChildren=objectWithoutPropertiesLoose_default()(nextProps,_excluded2);return isShallowEqual(prevPropsWithNoChildren,nextPropsWithNoChildren);};var ExtensionDataProvider=/*#__PURE__*/(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.memo)(function(props){return/*#__PURE__*/external_amd_react_commonjs_react_commonjs2_react_root_React_default().createElement(ExtensionDataContext.Provider,{value:props},props.children);},shallowCompareAllButChildren);
+;// CONCATENATED MODULE: ./hooks/environment/useEditorSDK.ts
+var useEditorSDK=function useEditorSDK(){return (0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useContext)(ExtensionDataContext).editorSDK;};
+;// CONCATENATED MODULE: ./hooks/environment/useDocumentServices.ts
+var useDocumentServices=function useDocumentServices(){return (0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useContext)(ExtensionDataContext).documentServices;};
+;// CONCATENATED MODULE: ./hooks/environment/useServiceTopology.ts
+var useServiceTopology=function useServiceTopology(){return (0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useContext)(ExtensionDataContext).serviceTopology;};
+;// CONCATENATED MODULE: ./hooks/environment/useTranslation.ts
+var useTranslation=function useTranslation(){return (0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useContext)(ExtensionDataContext).translate;};
+;// CONCATENATED MODULE: ./hooks/environment/useBiLogger.ts
+var useBiLogger=function useBiLogger(){return (0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useContext)(ExtensionDataContext).biLogger;};
+;// CONCATENATED MODULE: ./hooks/panels/useOpenedPanels.ts
+var useOpenedPanels=function useOpenedPanels(){return (0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useContext)(EditorOpenedPanelsContext);};
+;// CONCATENATED MODULE: ./hooks/panels/useEditorPanelAPI.ts
+function buildPanelToken(extensionId,panelName){return extensionId+"_"+panelName;}var useEditorPanelAPI=function useEditorPanelAPI(panelType){var editorSDK=useEditorSDK();var extensionId=useExtensionId();var openedPanels=useOpenedPanels();var openPanel=(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useCallback)(function(panelName,options){if(options===void 0){options={leavePanelsOpened:false};}return editorSDK.editor.openPanel(panelType,{token:buildPanelToken(extensionId,panelName)},options.leavePanelsOpened);},[editorSDK,extensionId,panelType]);var closePanel=(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useCallback)(function(panelName){var token=buildPanelToken(extensionId,panelName);return editorSDK.editor.closePanel(token,undefined);},[editorSDK,extensionId]);var isPanelOpened=(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useCallback)(function(panelName){var token=buildPanelToken(extensionId,panelName);return openedPanels.some(function(panel){return panel.token===token;});},[openedPanels,extensionId]);return (0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useMemo)(function(){return{openPanel:openPanel,closePanel:closePanel,isPanelOpened:isPanelOpened};},[openPanel,closePanel,isPanelOpened]);};
+;// CONCATENATED MODULE: ./hooks/panels/useBoundedPanelAPI.ts
+var useBoundedPanelAPI=function useBoundedPanelAPI(panelType){var _useEditorPanelAPI=useEditorPanelAPI(panelType),openPanel=_useEditorPanelAPI.openPanel,closePanel=_useEditorPanelAPI.closePanel,isPanelOpened=_useEditorPanelAPI.isPanelOpened;var panelName=useUniqueId();var boundedOpenPanel=(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useCallback)(function(options){return openPanel(panelName,options);},[openPanel,panelName]);var boundedClosePanel=(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useCallback)(function(){return closePanel(panelName);},[closePanel,panelName]);var boundedIsPanelOpened=(0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useCallback)(function(){return isPanelOpened(panelName);},[isPanelOpened,panelName]);return (0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useMemo)(function(){return{openPanel:boundedOpenPanel,closePanel:boundedClosePanel,isPanelOpened:boundedIsPanelOpened};},[boundedOpenPanel,boundedClosePanel,boundedIsPanelOpened]);};
+;// CONCATENATED MODULE: ./hooks/environment/useEditorExperiments.ts
+var useEditorExperiments=function useEditorExperiments(){return (0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useContext)(ExtensionDataContext).editorExperiments;};
+;// CONCATENATED MODULE: ./hooks/environment/useExperiments.ts
+var useExperiments=function useExperiments(){return (0,external_amd_react_commonjs_react_commonjs2_react_root_React_.useContext)(ExtensionDataContext).experiments;};
+// EXTERNAL MODULE: ./types/slotsState.ts
+var slotsState = __webpack_require__(101);
+// EXTERNAL MODULE: ./types/openedPanels.ts
+var openedPanels = __webpack_require__(570);
+// EXTERNAL MODULE: ./types/panelAPI.ts
+var panelAPI = __webpack_require__(843);
+;// CONCATENATED MODULE: ./state-management/extensionsSlotsActionsTypes.ts
+var REGISTER_SLOT_PORTAL='extensionsSlots.registerSlotPortal';var UNREGISTER_SLOT_PORTAL='extensionsSlots.unregisterSlotPortal';var UPDATE_SLOT_PORTAL_PROPS='extensionsSlots.updateSlotPortalProps';var REGISTER_SLOT_PORTAL_NODE='extensionsSlots.registerSlotPortalNode';var UNREGISTER_SLOT_PORTAL_NODE='extensionsSlots.unregisterSlotPortalNode';
+;// CONCATENATED MODULE: ./state-management/extensionsSlotsReducer.ts
+var extensionsSlotsInitialState={portals:{},portalNodes:{}};var extensionsSlotsReducer=function extensionsSlotsReducer(state,action){if(state===void 0){state=extensionsSlotsInitialState;}switch(action.type){case REGISTER_SLOT_PORTAL:{var _state$portals$slotId,_state$portals$slotId2,_extends2,_extends3;var _action$payload=action.payload,slotId=_action$payload.slotId,extensionId=_action$payload.extensionId,portalId=_action$payload.portalId;return extends_default()({},state,{portals:extends_default()({},state.portals,(_extends3={},_extends3[slotId]=extends_default()({},state.portals[slotId],(_extends2={},_extends2[extensionId]=[].concat((_state$portals$slotId=(_state$portals$slotId2=state.portals[slotId])==null?void 0:_state$portals$slotId2[extensionId])!=null?_state$portals$slotId:[],[{portalId:portalId,extensionId:extensionId,ownProps:{}}]),_extends2)),_extends3))});}case UNREGISTER_SLOT_PORTAL:{var _extends4,_extends5;var _action$payload2=action.payload,_slotId=_action$payload2.slotId,_extensionId=_action$payload2.extensionId,_portalId=_action$payload2.portalId;return extends_default()({},state,{portals:extends_default()({},state.portals,(_extends5={},_extends5[_slotId]=extends_default()({},state.portals[_slotId],(_extends4={},_extends4[_extensionId]=state.portals[_slotId][_extensionId].filter(function(slotPortal){return slotPortal.portalId!==_portalId;}),_extends4)),_extends5))});}case UPDATE_SLOT_PORTAL_PROPS:{var _state$portals$_slotI,_state$portals$_slotI2,_extends6,_extends7;var _action$payload3=action.payload,_slotId2=_action$payload3.slotId,_extensionId2=_action$payload3.extensionId,_portalId2=_action$payload3.portalId,portalProps=_action$payload3.portalProps;return extends_default()({},state,{portals:extends_default()({},state.portals,(_extends7={},_extends7[_slotId2]=extends_default()({},state.portals[_slotId2],(_extends6={},_extends6[_extensionId2]=((_state$portals$_slotI=(_state$portals$_slotI2=state.portals[_slotId2])==null?void 0:_state$portals$_slotI2[_extensionId2])!=null?_state$portals$_slotI:[]).map(function(slotPortal){if(slotPortal.portalId===_portalId2){return extends_default()({},slotPortal,{ownProps:portalProps});}return slotPortal;}),_extends6)),_extends7))});}case REGISTER_SLOT_PORTAL_NODE:{var _state$portalNodes$_p,_extends8;var _action$payload4=action.payload,_portalId3=_action$payload4.portalId,portalNodeId=_action$payload4.portalNodeId,placementId=_action$payload4.placementId;return extends_default()({},state,{portalNodes:extends_default()({},state.portalNodes,(_extends8={},_extends8[_portalId3]=[].concat((_state$portalNodes$_p=state.portalNodes[_portalId3])!=null?_state$portalNodes$_p:[],[{portalNodeId:portalNodeId,placementId:placementId}]),_extends8))});}case UNREGISTER_SLOT_PORTAL_NODE:{var _extends9;var _action$payload5=action.payload,_portalId4=_action$payload5.portalId,_placementId=_action$payload5.placementId;return extends_default()({},state,{portalNodes:extends_default()({},state.portalNodes,(_extends9={},_extends9[_portalId4]=state.portalNodes[_portalId4].filter(function(portalNode){return portalNode.placementId!==_placementId;}),_extends9))});}default:{return state;}}};
+;// CONCATENATED MODULE: ./state-management/extensionsSlotsActions.ts
+var registerSlotPortal=function registerSlotPortal(slotId,extensionId,portalId){return{type:REGISTER_SLOT_PORTAL,payload:{slotId:slotId,extensionId:extensionId,portalId:portalId}};};var unregisterSlotPortal=function unregisterSlotPortal(slotId,extensionId,portalId){return{type:UNREGISTER_SLOT_PORTAL,payload:{slotId:slotId,extensionId:extensionId,portalId:portalId}};};var updateSlotPortalProps=function updateSlotPortalProps(slotId,extensionId,portalId,portalProps){return{type:UPDATE_SLOT_PORTAL_PROPS,payload:{slotId:slotId,extensionId:extensionId,portalId:portalId,portalProps:portalProps}};};var registerSlotPortalNode=function registerSlotPortalNode(portalId,placementId,portalNodeId){return{type:REGISTER_SLOT_PORTAL_NODE,payload:{portalId:portalId,portalNodeId:portalNodeId,placementId:placementId}};};var unregisterSlotPortalNode=function unregisterSlotPortalNode(portalId,placementId){return{type:UNREGISTER_SLOT_PORTAL_NODE,payload:{portalId:portalId,placementId:placementId}};};
+;// CONCATENATED MODULE: ./state-management/extensionsSlotsSelectors.ts
+var getSlots=function getSlots(state){return state.extensionsSlots;};
+;// CONCATENATED MODULE: ./index.ts
+
+}();
+/******/ 	return __webpack_exports__;
+/******/ })()
+;
+});
+//# sourceMappingURL=extensions-slots-core.umd.js.map

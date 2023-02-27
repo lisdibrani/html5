@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id and class atributes | Web Forms</title>
+    <style>
+        name { color: red; }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <input type="text" name="name" id="name" value="john Smith">
+        <br />
+        <input type="radio" name="education" id="bsc" for="bsc">Bacelor</label>
+        <input type="radio" name="education" id="msc" for="msc">studime postdiplomike</label>
+    </form>
+
+
+    <script>
+        var name = document.getElementById('name').value;
+        document.write(name);
+    </script>
+
+    
+</body>
+</html>

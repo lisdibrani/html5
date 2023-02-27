@@ -1,0 +1,26 @@
+.cke_editable h1,
+.cke_editable h2,
+.cke_editable h3,
+.cke_editable h4,
+.cke_editable h5,
+.cke_editable h6,
+.cke_editable p,
+.cke_editable address,
+.cke_editable div,
+.cke_editable blockquote {
+    margin: 0;
+}
+
+.cke_editable:not(.non-letter-spacing-reset) h1,
+.cke_editable:not(.non-letter-spacing-reset) h2,
+.cke_editable:not(.non-letter-spacing-reset) h3,
+.cke_editable:not(.non-letter-spacing-reset) h4,
+.cke_editable:not(.non-letter-spacing-reset) h5,
+.cke_editable:not(.non-letter-spacing-reset) h6,
+.cke_editable:not(.non-letter-spacing-reset) p,
+.cke_editable:not(.non-letter-spacing-reset) address,
+.cke_editable:not(.non-letter-spacing-reset) div,
+.cke_editable:not(.non-letter-spacing-reset) blockquote {
+    line-height: normal;
+    letter-spacing: normal;
+}
