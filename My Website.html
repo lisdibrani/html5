@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<section class="showcase">
+<section class="showcase active">
     <header>
         <h2 class="logo">Travel</h2>
         <div class="toggle active"></div>
@@ -30,8 +30,8 @@
         </div>
         <ul class="social">
         <li><a href=""><img src="fb.2.jpg" alt="" width="50"></li>
-        <li><a href=""><img src="instagram.4.jpg" alt="" width="43"></li>
-        <li><a href=""></a>img src="Twitter-logo-png.png" alt="" width="43"></li>
+        <li><a href=""><img src="instagram.4.jpg" alt="" width="43"></li>   
+        <li><a href=""><img src="Twitter-logo-png.png" alt="" width="43"></li>
                 
         </ul>
         </section>
@@ -45,6 +45,16 @@
                 <li><a href="+383-045-909-882">Contact</a></li>
             </ul>
         </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click',(active) => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
     
 </body>
 </html>
